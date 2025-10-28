@@ -14,7 +14,7 @@ public class Example03 {
 //        list.add(1);
         // 제네릭 : 클래스나 메서드를 작성할 때 처할 데이터 타입을 '매개변수'화 -> 다양한 타입
         GenericBox<Integer> box = new GenericBox<>(100);
-        // 소거 <- Integer <= Number
+        // 타입 소거 <- Integer <= Number
         Class<?> boxClass = box.getClass();
         Field itemField = boxClass.getDeclaredField("data");
         System.out.println(itemField.getType());
